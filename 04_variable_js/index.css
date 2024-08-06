@@ -1,0 +1,17 @@
+/* THis is my comment */
+.facebook-custom,
+.twitter-custom {
+  background-color: green;
+  color: pink;
+}
+
+.section1 {
+  padding: 1em;
+  background-color: lime;
+  margin-bottom: 1em;
+}
+
+.section2 {
+  padding: 1em;
+  background-color: #eee;
+}
