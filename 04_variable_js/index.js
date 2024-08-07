@@ -132,3 +132,54 @@ fetch(apiUrl)
   .then(data => {
     console.log("User data", data)
   })
+  .catch(error =>{
+    console.log("Error fetching issue", error)
+  })
+
+let directory = document.getElementById("box1");
+// console.log(directory);
+
+directory.onclick = () => {
+    console.log("directory is executed")
+    let a = 25;
+    a++;
+    console.log(a);
+}
+
+let item2 = document.getElementById("box2");
+item2.onclick = () => {
+    console.log("event successfully of box-2")
+    let a = 5;
+    a--;
+    console.log(a);
+}
+
+let item3 = document.getElementById("box3");
+
+item3.onclick = () => {
+    console.log("event is successfully of box-3")
+
+    let a = 2
+    a = a * 2
+    console.log(a)
+
+}
+
+let enquiry = document.getElementById("box2");
+enquiry.onclick = (e) => {
+    console.log(e);
+}
+
+let modebtn = document.querySelector("#mode");
+let currMode = "light";
+modebtn.addEventListener('click', () => {
+    if(currMode === "light") {
+        currMode = "dark";
+        document.querySelector("body").style.backgroundColor = "black";
+    } else {
+        currMode = "light";
+        document.querySelector("body").style.backgroundColor = "pink";
+    }
+    console.log(currMode);
+})
+
